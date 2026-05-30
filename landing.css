@@ -484,25 +484,67 @@ section {
 }
 
 /* CTA */
-.cta-section {
+.shq-section {
     background: #fff2d3;
     color: #003f5c;
     text-align: center;
 }
 
-.cta-section h2 {
+.shq-section h2 {
     font-size: 44px;
     margin-bottom: 12px;
 }
 
-.cta-section p {
+.shq-section p {
     color: #222;
     font-size: 18px;
     margin-bottom: 30px;
 }
 
-.cta-section .hero-buttons {
+.shq-section .hero-buttons {
     justify-content: center;
+}
+
+.support-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.social-card {
+    width: 150px;
+    min-height: 135px;
+    background: white;
+    border-radius: 18px;
+    text-decoration: none;
+    color: #003f5c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    transition: 0.25s ease;
+}
+
+.social-card:hover {
+    transform: translateY(-6px);
+}
+
+.social-card img {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+.social-card span {
+    font-size: 16px;
+    font-weight: 800;
+    color: #003f5c;
 }
 
 /* FOOTER */
@@ -604,7 +646,7 @@ section {
 
     .section-heading h2,
     .why-content h2,
-    .cta-section h2 {
+    .shq-section h2 {
         font-size: 32px;
     }
 
