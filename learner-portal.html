@@ -11,7 +11,7 @@
 <body>
 
     <!-- SIDEBAR -->
-    <aside class="sidebar">
+    <aside class="sidebar" id="portalSidebar">
         <div class="brand">
             <img src="./assets/img/TutorHub logo.png" alt="TutorHub Logo">
             <div>
@@ -29,18 +29,29 @@
         </div>
 
         <nav class="sidebar-menu">
-            <button class="menu-link active" onclick="showPage('dashboard', this)">Dashboard</button>
-            <button class="menu-link" onclick="showPage('sessions', this)">My Sessions</button>
-            <button class="menu-link" onclick="showPage('tutors', this)">Find Tutors</button>
-            <button class="menu-link" onclick="showPage('reviews', this)">Reviews</button>
-            <button class="menu-link" onclick="showPage('profile', this)">Profile</button>
+            <button class="menu-link active" onclick="showPage('dashboard', this); closePortalMenu()">Dashboard</button>
+            <button class="menu-link" onclick="showPage('sessions', this); closePortalMenu()">My Sessions</button>
+            <button class="menu-link" onclick="showPage('tutors', this); closePortalMenu()">Find Tutors</button>
+            <button class="menu-link" onclick="showPage('reviews', this); closePortalMenu()">Reviews</button>
+            <button class="menu-link" onclick="showPage('profile', this); closePortalMenu()">Profile</button>
         </nav>
 
         <button class="logout-btn" onclick="logoutLearner()">Log out</button>
     </aside>
 
+    <div class="sidebar-overlay" id="sidebarOverlay" onclick="closePortalMenu()"></div>
+
     <!-- MAIN -->
     <main class="main-content">
+
+        <header class="mobile-portal-nav">
+            <div class="mobile-brand">
+                <img src="./assets/img/TutorHub logo.png" alt="TutorHub Logo">
+                <span>TutorHub</span>
+            </div>
+
+            <button class="portal-menu-btn" onclick="togglePortalMenu()">☰</button>
+        </header>
 
         <!-- TOPBAR -->
         <header class="topbar">

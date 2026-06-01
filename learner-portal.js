@@ -54,3 +54,13 @@ function logoutLearner() {
 }
 
 loadLearnerInfo();
+
+function togglePortalMenu() {
+    document.getElementById("portalSidebar").classList.toggle("active");
+    document.getElementById("sidebarOverlay").classList.toggle("active");
+}
+
+function closePortalMenu() {
+    document.getElementById("portalSidebar").classList.remove("active");
+    document.getElementById("sidebarOverlay").classList.remove("active");
+}

@@ -537,3 +537,94 @@ textarea {
         width: 100%;
     }
 }
+
+/* MOBILE PORTAL NAV */
+.mobile-portal-nav {
+    display: none;
+}
+
+.sidebar-overlay {
+    display: none;
+}
+
+@media (max-width: 950px) {
+    body {
+        display: block;
+    }
+
+    .mobile-portal-nav {
+        height: 75px;
+        background: #003f5c;
+        color: white;
+        padding: 0 22px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 1200;
+    }
+
+    .mobile-brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 900;
+        font-size: 20px;
+    }
+
+    .mobile-brand img {
+        width: 45px;
+        height: 45px;
+        object-fit: contain;
+    }
+
+    .portal-menu-btn {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 34px;
+        cursor: pointer;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: -280px;
+        width: 270px;
+        height: 100vh;
+        min-height: 100vh;
+        z-index: 1400;
+        transition: 0.3s ease;
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+
+    .sidebar-overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.45);
+        z-index: 1300;
+    }
+
+    .sidebar-overlay.active {
+        display: block;
+    }
+
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .logout-btn {
+        position: absolute;
+        left: 22px;
+        right: 22px;
+        bottom: 28px;
+        width: auto;
+        margin-top: 0;
+    }
+}
