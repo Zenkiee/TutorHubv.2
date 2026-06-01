@@ -75,7 +75,11 @@ document.getElementById("signupForm").addEventListener("submit", function(event)
     accountMessage.style.color = "green";
 
     setTimeout(() => {
+    if (newUser.role === "learner") {
+        window.location.href = "contract.html";
+    } else {
         redirectByRole(newUser.role);
+    }
     }, 800);
 });
 
