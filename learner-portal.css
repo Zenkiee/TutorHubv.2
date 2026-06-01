@@ -315,15 +315,6 @@ body {
     margin-bottom: 5px;
 }
 
-.small-btn {
-    background: #fff2d3;
-    color: #003f5c;
-    padding: 10px 16px;
-    text-decoration: none;
-    border-radius: 20px;
-    font-weight: 900;
-}
-
 /* TUTOR */
 .mini-tutor {
     display: flex;
