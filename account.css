@@ -22,9 +22,9 @@ body {
 
 .back-btn {
     position: absolute;
-    top: 25px;
+    top: 40px;
     left: 35px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 48px;
     text-decoration: none;
 }
@@ -131,5 +131,9 @@ body {
     .account-card {
         width: 100%;
         padding: 32px 25px;
+    }
+
+    .back-btn {
+        display: none;
     }
 }
