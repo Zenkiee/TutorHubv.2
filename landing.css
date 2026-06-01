@@ -172,6 +172,8 @@ body {
 .main-hero-box img {
     width: 120px;
     height: 120px;
+    background: rgb(0, 0, 0);
+    border-radius: 30%;
     object-fit: contain;
     margin-bottom: 20px;
 }
@@ -204,12 +206,12 @@ body {
 }
 
 .card-one {
-    top: 55px;
+    top: 35px;
     left: 10px;
 }
 
 .card-two {
-    bottom: 55px;
+    bottom: 35px;
     right: 20px;
 }
 

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learner Portal | TutorHub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&amp;family=Inter:wght@300;400;600&amp;display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./assets/img/TutorHub logo.png">
+    <link rel="stylesheet" href="./learner-portal.css">
+</head>
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="brand">
+            <img src="./assets/img/TutorHub logo.png" alt="TutorHub Logo">
+            <div>
+                <h2>TutorHub</h2>
+                <p>Learner Portal</p>
+            </div>
+        </div>
+
+        <div class="learner-card">
+            <div class="learner-avatar" id="learnerInitial">L</div>
+            <div>
+                <h3 id="learnerName">Learner</h3>
+                <p>Learner Account</p>
+            </div>
+        </div>
+
+        <nav class="sidebar-menu">
+            <button class="menu-link active" onclick="showPage('dashboard', this)">Dashboard</button>
+            <button class="menu-link" onclick="showPage('sessions', this)">My Sessions</button>
+            <button class="menu-link" onclick="showPage('tutors', this)">Find Tutors</button>
+            <button class="menu-link" onclick="showPage('reviews', this)">Reviews</button>
+            <button class="menu-link" onclick="showPage('profile', this)">Profile</button>
+        </nav>
+
+        <button class="logout-btn" onclick="logoutLearner()">Log out</button>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+        <!-- TOPBAR -->
+        <header class="topbar">
+            <div>
+                <h1 id="pageTitle">Dashboard</h1>
+                <p id="learnerGreeting">Welcome back, Learner!</p>
+            </div>
+
+            <a href="booking.html" class="book-btn">Book a Session</a>  
+        </header>
+
+        <!-- CONTENT -->
+        <section class="content">
+
+            <!-- DASHBOARD -->
+            <div class="page active" id="dashboard">
+                <div class="welcome-section">
+                    <div>
+                        <h2>Ready for your next lesson?</h2>
+                        <p>Track your sessions, find tutors, and continue your learning journey.</p>
+                    </div>
+
+                    <a href="booking.html" class="welcome-btn">Start Booking</a>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>3</h3>
+                        <p>Total Sessions</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <h3>1</h3>
+                        <p>Pending</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <h3>1</h3>
+                        <p>Confirmed</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <h3>1</h3>
+                        <p>Completed</p>
+                    </div>
+                </div>
+
+                <div class="section-grid">
+                    <div class="panel">
+                        <div class="panel-header">
+                            <h2>Upcoming Session</h2>
+                            <span class="status confirmed">Confirmed</span>
+                        </div>
+
+                        <div class="session-preview">
+                            <h3>English Tutoring</h3>
+                            <p>With Vannesa L. Cainong</p>
+                            <p>May 30, 2026 · 10:00 AM</p>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <div class="panel-header">
+                            <h2>Recommended Tutor</h2>
+                            <span class="status available">Available</span>
+                        </div>
+
+                        <div class="mini-tutor">
+                            <img src="./assets/img/tutor-avatar.png" alt="Tutor">
+                            <div>
+                                <h3>Vannesa L. Cainong</h3>
+                                <p>English, Math, Reading, Writing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MY SESSIONS -->
+            <div class="page" id="sessions">
+                <div class="panel">
+                    <div class="panel-header">
+                        <h2>My Sessions</h2>
+                        <a href="booking.html" class="small-btn">New Booking</a>
+                    </div>
+
+                    <div class="session-list">
+                        <div class="session-item">
+                            <div>
+                                <h3>English</h3>
+                                <p>May 30, 2026 · 10:00 AM</p>
+                            </div>
+
+                            <div>
+                                <p>Vannesa L. Cainong</p>
+                                <span class="status confirmed">Confirmed</span>
+                            </div>
+                        </div>
+
+                        <div class="session-item">
+                            <div>
+                                <h3>Math</h3>
+                                <p>June 1, 2026 · 2:00 PM</p>
+                            </div>
+
+                            <div>
+                                <p>Vannesa L. Cainong</p>
+                                <span class="status pending">Pending</span>
+                            </div>
+                        </div>
+
+                        <div class="session-item">
+                            <div>
+                                <h3>Reading</h3>
+                                <p>May 20, 2026 · 9:00 AM</p>
+                            </div>
+
+                            <div>
+                                <p>Vannesa L. Cainong</p>
+                                <span class="status done">Completed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FIND TUTORS -->
+            <div class="page" id="tutors">
+                <div class="panel">
+                    <div class="panel-header">
+                        <h2>Find Tutors</h2>
+                        <input type="text" class="search-input" placeholder="Search tutor or subject...">
+                    </div>
+
+                    <div class="tutor-grid">
+                        <div class="tutor-card">
+                            <img src="./assets/img/tutor-avatar.png" alt="Tutor">
+
+                            <h3>Vannesa L. Cainong</h3>
+                            <p>Independent Tutor</p>
+
+                            <div class="subject-tags">
+                                <span>English</span>
+                                <span>Math</span>
+                                <span>Reading</span>
+                                <span>Writing</span>
+                            </div>
+
+                            <div class="tutor-actions">
+                                <a href="#">View Profile</a>
+                                <a href="booking.html">Book Session</a>
+                            </div>
+                        </div>
+
+                        <div class="tutor-card placeholder">
+                            <div class="empty-avatar">T</div>
+
+                            <h3>New Tutor</h3>
+                            <p>Coming Soon</p>
+
+                            <div class="subject-tags">
+                                <span>Science</span>
+                                <span>Filipino</span>
+                            </div>
+
+                            <div class="tutor-actions">
+                                <a href="#">View Profile</a>
+                                <a href="booking.html">Book Session</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- REVIEWS -->
+            <div class="page" id="reviews">
+                <div class="panel review-panel">
+                    <h2>Submit a Review</h2>
+                    <p class="panel-subtitle">
+                        You can review tutors after attending or booking a session.
+                    </p>
+
+                    <form class="review-form">
+                        <label>Choose tutor/session</label>
+                        <select>
+                            <option>Select a tutor/session</option>
+                            <option>Vannesa L. Cainong - English - May 30, 2026</option>
+                            <option>Vannesa L. Cainong - Reading - May 20, 2026</option>
+                        </select>
+
+                        <label>Rating</label>
+                        <select>
+                            <option>Select rating</option>
+                            <option>★★★★★ - Excellent</option>
+                            <option>★★★★☆ - Very Good</option>
+                            <option>★★★☆☆ - Good</option>
+                            <option>★★☆☆☆ - Fair</option>
+                            <option>★☆☆☆☆ - Poor</option>
+                        </select>
+
+                        <label>Your Review</label>
+                        <textarea placeholder="Write your feedback here..."></textarea>
+
+                        <button type="button">Submit Review</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- PROFILE -->
+            <div class="page" id="profile">
+                <div class="panel profile-panel">
+                    <h2>My Profile</h2>
+                    <p class="panel-subtitle">Manage your learner account information.</p>
+
+                    <form class="profile-form">
+                        <label>Full Name</label>
+                        <input type="text" id="profileName" placeholder="Learner Name">
+
+                        <label>Email</label>
+                        <input type="email" id="profileEmail" placeholder="learner@email.com">
+
+                        <label>Contact Number</label>
+                        <input type="text" placeholder="09XXXXXXXXX">
+
+                        <button type="button">Save Changes</button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="./auth-guard.js"></script>
+    <script>
+        requireRole("learner");
+    </script>
+    <script src="./learner-portal.js"></script>
+</body>
+</html>

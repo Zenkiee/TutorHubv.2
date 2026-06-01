@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #003f5c;
+}
+
+.account-page {
+    min-height: 100vh;
+    background: #003f5c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    position: relative;
+}
+
+.back-btn {
+    position: absolute;
+    top: 25px;
+    left: 35px;
+    color: white;
+    font-size: 48px;
+    text-decoration: none;
+}
+
+.account-card {
+    width: 430px;
+    background: #fff2d3;
+    border-radius: 20px;
+    padding: 38px 42px;
+    text-align: center;
+}
+
+.account-logo {
+    width: 85px;
+    height: 85px;
+    background: rgb(0, 0, 0);
+    border-radius: 30%;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.account-card h1 {
+    color: #003f5c;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.account-card p {
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 22px;
+}
+
+.account-tabs {
+    display: flex;
+    background: white;
+    border-radius: 25px;
+    padding: 5px;
+    margin-bottom: 25px;
+}
+
+.tab-btn {
+    flex: 1;
+    border: none;
+    border-radius: 22px;
+    padding: 11px;
+    background: transparent;
+    color: #003f5c;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.tab-btn.active {
+    background: #8b0000;
+    color: white;
+}
+
+.account-form {
+    display: none;
+    flex-direction: column;
+    text-align: left;
+}
+
+.account-form.active {
+    display: flex;
+}
+
+.account-form label {
+    color: #8b0000;
+    font-weight: 800;
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+.account-form input {
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    padding: 0 15px;
+    margin-bottom: 16px;
+    outline: none;
+    font-weight: 700;
+    color: #003f5c;
+}
+
+.account-form button {
+    height: 48px;
+    border: none;
+    border-radius: 12px;
+    background: #8b0000;
+    color: white;
+    font-size: 18px;
+    font-weight: 900;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+#accountMessage {
+    margin-top: 18px;
+    font-weight: 800;
+}
+
+@media (max-width: 500px) {
+    .account-card {
+        width: 100%;
+        padding: 32px 25px;
+    }
+}
