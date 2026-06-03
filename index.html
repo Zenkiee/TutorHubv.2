@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TutorHub</title>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&amp;family=Inter:wght@300;400;600&amp;display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="./assets/img/TutorHub logo.jpg">
+    <title>Skolar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./assets/img/skolarlogo.png">
     <link rel="stylesheet" href="./landing.css">
     <script src="./landing.js" defer></script>
 </head>
@@ -14,14 +14,14 @@
     <!-- NAVBAR -->
     <nav class="landing-nav">
         <a href="#home" class="nav-logo">
-            <img src="./assets/img/TutorHub.png" alt="TutorHub Logo">
+            <img src="./assets/img/Skolar logo white .png" alt="Skolar Logo">
         </a>
 
         <div class="nav-menu" id="navMenu">
             <a href="#home">Home</a>
-            <a href="#roles">Roles</a>
-            <a href="#how">How it works</a>
+            <a href="#how">About</a>
             <a href="#subjects">Subjects</a>
+            <a href="#roles">Roles</a>
             <a href="#faq">FAQ</a>
             <a href="#contact">Contact</a>
         </div>
@@ -45,7 +45,7 @@
             </h1>
 
             <p class="hero-description">
-                TutorHub helps learners book sessions easily while giving tutors a simple way
+                Skolar helps learners book sessions easily while giving tutors a simple way
                 to manage availability, bookings, and student reviews.
             </p>
 
@@ -62,8 +62,7 @@
             </div>
 
             <div class="main-hero-box">
-                <img src="./assets/img/TutorHub logo.png" alt="TutorHub Logo">
-                <h2>TutorHub</h2>
+                <img src="./assets/img/Skolar logo white .png" alt="Skolar Logo">
                 <p>Flexible tutoring made simple.</p>
             </div>
 
@@ -74,41 +73,11 @@
         </div>
     </header>
 
-    <!-- ROLE SELECTION -->
-    <section class="roles-section" id="roles">
-        <div class="section-heading">
-            <p>Choose your role</p>
-            <h2>How would you like to continue?</h2>
-        </div>
-
-        <div class="role-grid">
-            <a href="learner-portal.html" class="role-card">
-                <div class="role-icon">🎓</div>
-                <h3>I’m a Learner</h3>
-                <p>
-                    View tutor information, check available schedules,
-                    book sessions, and submit your booking details.
-                </p>
-                <span>Go to learner page</span>
-            </a>
-
-            <a href="#" class="role-card tutor-role">
-                <div class="role-icon">📚</div>
-                <h3>I’m a Tutor</h3>
-                <p>
-                    Log in to manage availability, approve bookings,
-                    update your profile, and control student reviews.
-                </p>
-                <span>Go to tutor login</span>
-            </a>
-        </div>
-    </section>
-
     <!-- HOW IT WORKS -->
     <section class="how-section" id="how">
-        <div class="section-heading">
+        <div class="section-heading-how">
             <p>Simple process</p>
-            <h2>How TutorHub works</h2>
+            <h2>How Skolar works</h2>
         </div>
 
         <div class="how-layout">
@@ -154,7 +123,7 @@
 
     <!-- SUBJECTS -->
     <section class="subjects-section" id="subjects">
-        <div class="section-heading">
+        <div class="section-heading-subjects">
             <p>Featured subjects</p>
             <h2>Subjects learners can book</h2>
         </div>
@@ -187,40 +156,111 @@
     </section>
 
     <!-- WHY CHOOSE -->
-    <section class="why-section">
-        <div class="why-content">
-            <div>
-                <p class="eyebrow dark">Why TutorHub?</p>
-                <h2>A smoother system for both sides.</h2>
+    <section class="why-section" id="why">
+        <h2 class="why-title">Why choose us?</h2>
+
+        <div class="why-container">
+            <div class="why-row">
+                <div class="why-text">
+                    <h3>Learning That Fits Your Child</h3>
+                    <p>
+                        Every child learns in their own way. Some students learn quickly,
+                        while others need more time and guidance. Our tutors adjust their
+                        teaching approach based on each student's needs, helping them
+                        understand lessons better and learn at a pace that is comfortable
+                        for them.
+                    </p>
+                </div>
+
+                <div class="why-image">
+                    <img src="./assets/img/why-child-learning.png" alt="Children learning online">
+                </div>
             </div>
 
-            <div class="why-list">
-                <div class="why-item">
-                    <span>✓</span>
-                    <p>Tutor availability is controlled by the tutor, not randomly generated.</p>
+            <div class="why-row reverse">
+                <div class="why-text">
+                    <h3>Tutors Who Care</h3>
+                    <p>
+                        Our tutors are committed to helping students improve and gain
+                        confidence in their studies. They create a friendly and supportive
+                        learning environment where students can ask questions, participate
+                        actively, and enjoy learning without feeling pressured.
+                    </p>
                 </div>
 
-                <div class="why-item">
-                    <span>✓</span>
-                    <p>Learners can only select valid and available booking dates.</p>
+                <div class="why-image">
+                    <img src="./assets/img/why-tutor-care.png" alt="Tutor teaching online">
+                </div>
+            </div>
+
+            <div class="why-row">
+                <div class="why-text">
+                    <h3>Easy and Convenient Access</h3>
+                    <p>
+                        With online tutoring, students can learn from the comfort of their
+                        own homes. Parents can easily find tutors, book sessions, and get
+                        the academic support their children need without the hassle of
+                        traveling or adjusting to strict schedules.
+                    </p>
                 </div>
 
-                <div class="why-item">
-                    <span>✓</span>
-                    <p>Bookings are saved as pending until accepted by the tutor.</p>
+                <div class="why-image">
+                    <img src="./assets/img/why-easy-access.png" alt="Online learning session">
+                </div>
+            </div>
+
+            <div class="why-row reverse">
+                <div class="why-text">
+                    <h3>Helping Young Learners Grow</h3>
+                    <p>
+                        Our main focus is on preschool and elementary students because
+                        these years are important in building strong learning habits and
+                        basic skills. We aim to help children develop confidence, improve
+                        their understanding of subjects, and create a positive attitude
+                        toward learning that can benefit them in the future.
+                    </p>
                 </div>
 
-                <div class="why-item">
-                    <span>✓</span>
-                    <p>Reviews only appear publicly after tutor approval.</p>
+                <div class="why-image">
+                    <img src="./assets/img/why-young-learners.png" alt="Young learner smiling">
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ROLE SELECTION -->
+    <section class="roles-section" id="roles">
+        <div class="section-heading-roles">
+            <p>Choose your role</p>
+            <h2>How would you like to continue?</h2>
+        </div>
+
+        <div class="role-grid">
+            <a href="account.html?role=learner" class="role-card">
+                <div class="role-icon">🎓</div>
+                <h3>I’m a Learner</h3>
+                <p>
+                    View tutor information, check available schedules,
+                    book sessions, and submit your booking details.
+                </p>
+                <span>Go to learner page</span>
+            </a>
+
+            <a href="account.html?role=tutor" class="role-card tutor-role">
+                <div class="role-icon">📚</div>
+                <h3>I’m a Tutor</h3>
+                <p>
+                    Log in to manage availability, approve bookings,
+                    update your profile, and control student reviews.
+                </p>
+                <span>Go to tutor login</span>
+            </a>
+        </div>
+    </section>
+
     <!-- FAQ -->
     <section class="faq-section" id="faq">
-        <div class="section-heading">
+        <div class="section-heading-faq">
             <p>Frequently asked questions</p>
             <h2>Need help?</h2>
         </div>
@@ -270,9 +310,13 @@
         </div>
     </section>
 
-    <!-- CTA -->
+    <!-- STILL HAVE QUESTIONS -->
     <section class="shq-section" id="contact">
-        <h2>Still have questions?</h2>
+        <div class="section-heading-shq">
+            <p>Contact us</p>
+            <h2>Still have questions?</h2>
+        </div>
+
         <p>Contact our support team for assistance.</p>
 
         <div class="support-socials">
@@ -295,11 +339,31 @@
 
     <!-- FOOTER -->
     <footer class="landing-footer">
-        <div>
-            <img src="./assets/img/TutorHub.png" alt="TutorHub Logo">
+        <div class="footer-logo-top">
+            <img src="./assets/img/Skolar logo white .png" alt="Skolar Logo" class="footer-logo">
         </div>
 
-        <p>© 2026 TutorHub.</p>
+        <div class="footer-columns">
+            <div class="footer-column">
+                <a href="#how">About Skolar</a>
+                <a href="#subjects">Featured Subjects</a>
+                <a href="#roles">Become a tutor</a>
+                <a href="#faq">FAQ</a>
+            </div>
+
+            <div class="footer-column">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Code of Conduct</a>
+            </div>
+
+            <div class="footer-column footer-contact">
+                <p>Manila, Philippines</p>
+                <a href="#contact">Contact Us</a>
+            </div>
+        </div>
+
+        <p class="footer-bottom">© 2026 Skolar. All rights reserved</p>
     </footer>
 
 </body>
