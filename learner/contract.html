@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legal Documentation | Skolar</title>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&amp;family=Inter:wght@300;400;600&amp;display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="./assets/img/skolarlogo.png">
-    <link rel="stylesheet" href="./css/contract.css">
+    <link rel="icon" type="image/png" href="../assets/img/skolarlogo.png">
+    <link rel="stylesheet" href="./learner-css/contract.css">
 </head>
 <body>
 
     <main class="contract-page">
-        <a href="account.html?role=learner" class="back-btn">‹</a>
+        <a href="../account.html?role=learner" class="back-btn">‹</a>
 
         <section class="contract-card">
-            <img src="./assets/img/Skolar logo white .png" alt="Skolar Logo" class="contract-logo">
+            <img src="../assets/img/Skolar logo white .png" alt="Skolar Logo" class="contract-logo">
 
             <h1>Legal Documentation / Contract</h1>
             <p class="subtitle">
@@ -45,6 +45,10 @@
         </section>
     </main>
 
-    <script src="./javascript/contract.js"></script>
+    <script src="../main-js/auth-guard.js"></script>
+    <script>
+        requireRole("learner");
+    </script>
+    <script src="./learner-js/contract.js"></script>
 </body>
 </html>

@@ -49,7 +49,7 @@ function logoutLearner() {
         logoutUser();
     } else {
         localStorage.removeItem("currentUser");
-        window.location.href = "index.html";
+        window.location.href = "learner-portal.html";
     }
 }
 

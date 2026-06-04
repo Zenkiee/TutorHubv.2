@@ -69,8 +69,8 @@ if (loginForm) {
 
 function redirectByRole(role) {
     if (role === "tutor") {
-        window.location.href = "admin.html";
+        window.location.href = "tutor/tutor-dashboard.html";
     } else {
-        window.location.href = "learner-portal.html";
+        window.location.href = "learner/learner-portal.html";
     }
 }

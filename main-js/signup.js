@@ -146,7 +146,7 @@ if (learnerProfileForm) {
         accountMessage.style.color = "#b6ffb6";
 
         setTimeout(() => {
-            window.location.href = "learner-portal.html";
+            window.location.href = "learner/learner-portal.html";
         }, 800);
     });
 }
@@ -182,6 +182,6 @@ tutorProfileForm.addEventListener("submit", function(event) {
     accountMessage.style.color = "#b6ffb6";
 
     setTimeout(() => {
-        window.location.href = "admin.html";
+        window.location.href = "tutor/tutor-dashboard.html";
     }, 800);
 });
