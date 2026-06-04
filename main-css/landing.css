@@ -502,7 +502,7 @@ section {
 
 .why-image img {
     width: 100%;
-    max-width: 340px;
+    max-width: 600px;
     display: block;
     margin: 0 auto;
     object-fit: contain;
@@ -531,6 +531,7 @@ section {
     background: #b8beb6;
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
     opacity: 0.9;
+
 }
 
 /* FAQ */
