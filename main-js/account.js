@@ -51,7 +51,7 @@ if (loginForm) {
         });
 
         if (!user) {
-            accountMessage.textContent = "Invalid email, password, or role.";
+            accountMessage.textContent = "Invalid email or password";
             accountMessage.style.color = "#ffb3b3";
             return;
         }
