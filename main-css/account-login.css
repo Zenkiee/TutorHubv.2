@@ -40,6 +40,11 @@ body {
     color: white;
 }
 
+.account-logo {
+    display: none;
+    margin: 0 auto 20px;
+}
+
 /* LOGIN FORM */
 .account-form {
     display: none;
@@ -179,7 +184,7 @@ body {
     background: #003f5c;
     bottom: -18%;
     left: -15%;
-    border-radius: 55% 45% 0 0;
+    border-radius: 65% 35% 0 0;
     z-index: 1;
 }
 
@@ -210,7 +215,8 @@ body {
     }
 
     .account-logo {
-        width: 210px;
+        display: block;
+        width: 200px;
     }
 }
 
@@ -220,7 +226,7 @@ body {
     }
 
     .account-logo {
-        width: 185px;
+        width: 120px;
     }
 
     .account-box h2 {

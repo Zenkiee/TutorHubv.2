@@ -44,6 +44,11 @@ body {
     color: white;
 }
 
+.account-logo {
+    display: none;
+    margin: 0 auto 20px;
+}
+
 /* SIGNUP STEPPER */
 .signup-stepper {
     display: flex;
@@ -259,7 +264,7 @@ body {
     background: #003f5c;
     bottom: -18%;
     left: -15%;
-    border-radius: 55% 45% 0 0;
+    border-radius: 65% 35% 0 0;
     z-index: 1;
 }
 
@@ -290,6 +295,7 @@ body {
     }
 
     .account-logo {
+        display: block;
         width: 200px;
     }
 }
@@ -300,12 +306,12 @@ body {
         max-width: 100%;
     }
 
-    .account-logo {
-        width: 180px;
-    }
-
     .account-box h2 {
         font-size: 22px;
+    }
+
+    .account-logo {
+        width: 120px;
     }
 
     .account-form input,
