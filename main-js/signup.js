@@ -22,6 +22,14 @@ if (goToLogin) {
     goToLogin.href = `account.html?role=${selectedRole}`;
 }
 
+const termsLink = document.getElementById("termsLink");
+
+if (termsLink) {
+    termsLink.href = selectedRole === "tutor"
+        ? "terms-tutor.html"
+        : "terms-learner.html";
+}
+
 function getUsers() {
     return JSON.parse(localStorage.getItem("users")) || [];
 }
