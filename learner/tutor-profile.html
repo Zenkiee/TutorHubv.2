@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutor Profile | Skolar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../assets/img/skolarlogo.png">
+    <link rel="stylesheet" href="./learner-css/tutor-profile.css">
+</head>
+<body>
+
+    <main class="tutor-info-page">
+        <a href="./learner-portal.html" class="back-btn">‹</a>
+
+        <h1>Tutor’s Info</h1>
+
+        <div class="tutor-info-layout">
+
+            <!-- LEFT PROFILE CARD -->
+            <section class="profile-panel" id="profilePanel">
+            </section>
+
+            <!-- RIGHT AVAILABILITY CARD -->
+            <section class="availability-panel">
+                <h2>Availability</h2>
+
+                <div class="calendar-card">
+                    <div class="calendar-header">
+                        <button type="button" id="prevMonth">‹</button>
+                        <h3 id="calendarMonth">January 2026</h3>
+                        <button type="button" id="nextMonth">›</button>
+                    </div>
+
+                    <div class="calendar-weekdays">
+                        <span>Mo</span>
+                        <span>Tu</span>
+                        <span>We</span>
+                        <span>Th</span>
+                        <span>Fr</span>
+                        <span>Sa</span>
+                        <span>Su</span>
+                    </div>
+
+                    <div class="calendar-days" id="calendarDays"></div>
+                </div>
+
+                <a href="./booking.html" class="book-session-btn" id="bookSessionBtn">
+                    Book Session
+                </a>
+            </section>
+
+        </div>
+    </main>
+
+    <script src="./learner-js/tutor-profile.js"></script>
+</body>
+</html>

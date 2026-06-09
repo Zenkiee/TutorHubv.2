@@ -182,48 +182,13 @@
                 <div class="panel">
                     <div class="panel-header">
                         <h2>Find Tutors</h2>
-                        <input type="text" class="search-input" placeholder="Search tutor or subject...">
+                        <input type="text" class="search-input" id="tutorSearch" placeholder="Search tutor or subject...">
                     </div>
 
-                    <div class="tutor-grid">
-                        <div class="tutor-card">
-                            <img src="../assets/img/tutor-avatar.png" alt="Tutor">
-
-                            <h3>Vannesa L. Cainong</h3>
-                            <p>Independent Tutor</p>
-
-                            <div class="subject-tags">
-                                <span>English</span>
-                                <span>Math</span>
-                                <span>Reading</span>
-                                <span>Writing</span>
-                            </div>
-
-                            <div class="tutor-actions">
-                                <a href="#">View Profile</a>
-                                <a href="booking.html">Book Session</a>
-                            </div>
-                        </div>
-
-                        <div class="tutor-card placeholder">
-                            <div class="empty-avatar">T</div>
-
-                            <h3>New Tutor</h3>
-                            <p>Coming Soon</p>
-
-                            <div class="subject-tags">
-                                <span>Science</span>
-                                <span>Filipino</span>
-                            </div>
-
-                            <div class="tutor-actions">
-                                <a href="#">View Profile</a>
-                                <a href="booking.html">Book Session</a>
-                            </div>
-                        </div>
+                    <div class="tutor-grid" id="tutorGrid">
                     </div>
                 </div>
-            </div>
+            </div>  
 
             <!-- REVIEWS -->
             <div class="page" id="reviews">
@@ -283,6 +248,7 @@
         </section>
     </main>
 
+    <script src="../main-js/tutor-data.js"></script>
     <script src="../main-js/auth-guard.js"></script>
     <script>
         requireRole("learner");
