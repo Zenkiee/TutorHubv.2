@@ -8,6 +8,25 @@ const pageTitles = {
     profile: "Profile"
 };
 
+document.addEventListener("DOMContentLoaded", () => {
+    const dateEl = document.getElementById("currentDate");
+
+    if (dateEl) {
+        const now = new Date();
+
+        const options = {
+            weekday: "long",
+            year: "numeric",
+            month: "long",
+            day: "numeric"
+        };
+
+        dateEl.textContent = now.toLocaleDateString("en-US", options);
+    } else {
+        console.error('Element with ID "currentDate" was not found.');
+    }
+});
+
 function loadLearnerInfo() {
     if (!currentUser) return;
 

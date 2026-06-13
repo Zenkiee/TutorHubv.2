@@ -766,6 +766,29 @@ section {
     .subject-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .landing-footer {
+        text-align: center;
+        padding: 28px 25px;
+    }
+
+    .footer-logo-top {
+        text-align: center;
+    }
+
+    .footer-columns {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 0 30px;
+    }
+
+    .footer-columns > div {
+        justify-self: center !important;
+    }
+
+    .footer-column {
+        align-items: center;
+    }
 }
 
 @media (max-width: 850px) {
@@ -828,28 +851,5 @@ section {
 
     .subject-grid {
         grid-template-columns: 1fr;
-    }
-
-    .landing-footer {
-        text-align: center;
-        padding: 28px 25px;
-    }
-
-    .footer-logo-top {
-        text-align: center;
-    }
-
-    .footer-columns {
-        grid-template-columns: 1fr;
-        gap: 30px;
-        padding: 0 30px;
-    }
-
-    .footer-columns > div {
-        justify-self: center !important;
-    }
-
-    .footer-column {
-        align-items: center;
     }
 }
